@@ -12,7 +12,7 @@ const columns = [
     accessor: "col3",
   },
   {
-    Header: ["SOIC Membership", "for Intelligent Investors"],
+    Header: ["SOIC Membership", "For Intelligent Investors"],
     accessor: "col4",
   },
   {
@@ -58,7 +58,7 @@ const data = [
     col5: true,
   },
   {
-    col1: "Alternate Investments (Gold, silver etc)",
+    col1: "Alternate Investments (Gold, Silver etc)",
     col2: true,
     col3: true,
     col4: true,
