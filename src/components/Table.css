@@ -1,7 +1,18 @@
 .container {
   width: 100vw;
   height: 86vh;
-  /* overflow: hidden; */
+  /* overflow-x: hidden;
+  overflow-y: visible; */
+  position: relative;
+}
+.offer--img {
+  position: absolute;
+  max-width: 200px;
+  width: 15vw;
+  min-width: 150px;
+  right: 2.5vw;
+  top: -6vw;
+  z-index: 9999;
 }
 .table {
   width: 80%;
@@ -11,7 +22,7 @@
   overflow: scroll;
   background-color: #151515;
   border-radius: 10px;
-  box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.15), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.15), 0px 10px 15px -3px rgba(0, 0, 0, 0.35);
   position: relative;
 }
 a,
@@ -96,22 +107,53 @@ a:visited {
   background: rgb(67, 79, 252);
   background: linear-gradient(90deg, rgba(67, 79, 252, 1) 0%, rgba(9, 167, 214, 1) 70%);
 }
-.tbody .tr:first-of-type .td:nth-child(2) {
+.tbody .tr:nth-of-type(1) .td:nth-child(2) {
+  color: rgb(206, 92, 200);
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+.tbody .tr:nth-of-type(1) .td:not(:first-of-type)::after {
+  content: "-----------";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+}
+.tbody .tr:nth-of-type(1) .td:nth-child(3) {
+  color: rgb(224, 81, 79);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration-line: line-through;
+}
+.tbody .tr:nth-of-type(1) .td:nth-child(4) {
+  color: rgb(255, 29, 51);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration-line: line-through;
+}
+.tbody .tr:nth-of-type(1) .td:nth-child(5) {
+  color: rgb(67, 79, 252);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration-line: line-through;
+}
+
+.tbody .tr:nth-of-type(2) .td:nth-child(2) {
   color: rgb(206, 92, 200);
   font-weight: 700;
   font-size: 16px;
 }
-.tbody .tr:first-of-type .td:nth-child(3) {
+.tbody .tr:nth-of-type(2) .td:nth-child(3) {
   color: rgb(224, 81, 79);
   font-weight: 700;
   font-size: 16px;
 }
-.tbody .tr:first-of-type .td:nth-child(4) {
+.tbody .tr:nth-of-type(2) .td:nth-child(4) {
   color: rgb(255, 29, 51);
   font-weight: 700;
   font-size: 16px;
 }
-.tbody .tr:first-of-type .td:nth-child(5) {
+.tbody .tr:nth-of-type(2) .td:nth-child(5) {
   color: rgb(67, 79, 252);
   font-weight: 700;
   font-size: 16px;
@@ -159,6 +201,11 @@ button:hover {
   .td.col0,
   .thead .tr .th:first-of-type {
     min-width: 200px !important;
+  }
+  .offer--img {
+    min-width: 100px;
+    right: 0vw;
+    top: -7.5vw;
   }
 }
 @media screen and (max-width: 600px) {

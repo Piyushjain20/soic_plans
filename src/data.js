@@ -24,6 +24,13 @@ const columns = [
 const data = [
   {
     col1: "FEATURES:",
+    col2: "INR 9,999 /yr",
+    col3: "INR 11,999 /yr",
+    col4: "INR 14,999 /yr",
+    col5: "INR 1,19,999 /yr",
+  },
+  {
+    col1: "",
     col2: "INR 6,999 /yr",
     col3: "INR 8,999 /yr",
     col4: "INR 11,999 /yr",

@@ -5,6 +5,7 @@ import { useTable, useResizeColumns, useFlexLayout, useRowSelect, useBlockLayout
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "./Table.css";
+import OfferImg from "../assets/Exclusive.png";
 
 export default function Table() {
   const { getTableProps, headerGroups, rows, prepareRow } = useTable(
@@ -20,6 +21,7 @@ export default function Table() {
   const regexUrl = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/gi;
   return (
     <div className="container">
+      <img src={OfferImg} alt="Offer" className="offer--img" />
       <div {...getTableProps()} className="table">
         <div className="thead">
           {headerGroups.map((headerGroup) => (
