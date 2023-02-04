@@ -1,0 +1,145 @@
+.container {
+  width: 100vw;
+  height: 86vh;
+  /* overflow: hidden; */
+}
+.table {
+  width: 80%;
+  max-height: 100%;
+  margin: 0 auto;
+  border-spacing: 0;
+  overflow: scroll;
+  background-color: #151515;
+  border-radius: 10px;
+  box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.15), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+.th,
+.td {
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  border-right: 1px solid #232323;
+  border-bottom: 1px solid #232323;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tbody .tr:last-child {
+  border-bottom: 0;
+}
+.tr .td:last-child,
+.th:last-child {
+  border-right: 0;
+}
+.leftSticky {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  left: 0px;
+  z-index: 999;
+  justify-content: flex-start;
+  text-align: left;
+  /* padding-left: 20px; */
+}
+.topSticky {
+  /* align-self: flex-start; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-self: center; */
+  height: auto;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0%;
+  z-index: 999;
+}
+.first {
+  font-weight: 700;
+}
+.second {
+  font-weight: 100;
+  font-size: 12px;
+}
+.tr .th:first-child {
+  background-color: #151515;
+  z-index: 9999;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+}
+.tr .td:first-child {
+  background: #198ee1;
+  font-size: 14px;
+}
+.thead .tr .th:nth-child(2) {
+  background: rgb(206, 92, 200);
+  background: linear-gradient(90deg, rgba(206, 92, 200, 1) 0%, rgba(77, 72, 252, 1) 70%);
+}
+.thead .tr .th:nth-child(3) {
+  background: rgb(224, 81, 79);
+  background: linear-gradient(90deg, rgba(224, 81, 79, 1) 0%, rgba(255, 153, 68, 1) 70%);
+}
+.thead .tr .th:nth-child(4) {
+  background: rgb(255, 29, 51);
+  background: linear-gradient(90deg, rgba(255, 29, 51, 1) 0%, rgba(177, 0, 92, 1) 70%);
+}
+.thead .tr .th:nth-child(5) {
+  background: rgb(67, 79, 252);
+  background: linear-gradient(90deg, rgba(67, 79, 252, 1) 0%, rgba(9, 167, 214, 1) 70%);
+}
+.tbody .tr:first-of-type .td:nth-child(2) {
+  color: rgb(206, 92, 200);
+}
+.tbody .tr:first-of-type .td:nth-child(3) {
+  color: rgb(224, 81, 79);
+}
+.tbody .tr:first-of-type .td:nth-child(4) {
+  color: rgb(255, 29, 51);
+}
+.tbody .tr:first-of-type .td:nth-child(5) {
+  color: rgb(67, 79, 252);
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(120%);
+  transform: scale(1.05);
+}
+.col1 button {
+  background: linear-gradient(90deg, rgba(206, 92, 200, 1) 0%, rgba(77, 72, 252, 1) 70%);
+}
+.col2 button {
+  background: linear-gradient(90deg, rgba(224, 81, 79, 1) 0%, rgba(255, 153, 68, 1) 70%);
+}
+.col3 button {
+  background: linear-gradient(90deg, rgba(255, 29, 51, 1) 0%, rgba(177, 0, 92, 1) 70%);
+}
+.col4 button {
+  background: linear-gradient(90deg, rgba(67, 79, 252, 1) 0%, rgba(9, 167, 214, 1) 70%);
+}
+.green {
+  color: #46de46;
+}
+.red {
+  color: #fe1b16;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    height: 85vh;
+  }
+  .table {
+    width: 90%;
+  }
+}
