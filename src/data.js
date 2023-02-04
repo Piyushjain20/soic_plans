@@ -158,9 +158,9 @@ const data = [
   {
     col1: "",
     col2: "https://rzp.io/l/qr7VQiZF",
-    col3: "https://rzp.io/l/EBK9eL2",
-    col4: "https://rzp.io/l/JedScWLMvT",
-    col5: "https://rzp.io/l/hPNme16",
+    col3: "https://rzp.io/l/hPNme16",
+    col4: "https://rzp.io/l/EBK9eL2",
+    col5: "https://rzp.io/l/JedScWLMvT",
   },
 ];
 export { data, columns };
