@@ -6,7 +6,10 @@ export default function Nav() {
     <div className="header">
       <div className="logo__container">
         <img src={SOIC_logo} alt="SOIC Logo" className="logo" />
-        <h5 className="logo__text">School of Intrinsic Compounding</h5>
+        <h5 className="logo__text">
+          <span>School of</span>
+          <span>Intrinsic Compounding</span>
+        </h5>
       </div>
       <h1 className="title">SOIC MEMBERSHIP PLANS</h1>
     </div>
