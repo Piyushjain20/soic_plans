@@ -95,22 +95,22 @@ a:visited {
 .tbody .tr:first-of-type .td:nth-child(2) {
   color: rgb(206, 92, 200);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 .tbody .tr:first-of-type .td:nth-child(3) {
   color: rgb(224, 81, 79);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 .tbody .tr:first-of-type .td:nth-child(4) {
   color: rgb(255, 29, 51);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 .tbody .tr:first-of-type .td:nth-child(5) {
   color: rgb(67, 79, 252);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 button {
   border: none;
