@@ -10,8 +10,9 @@
   max-width: 200px;
   width: 15vw;
   min-width: 150px;
-  right: 2.5vw;
-  top: -6vw;
+  right: 6vw;
+  top: -5.5vw;
+
   z-index: 9999;
 }
 .table {
@@ -123,19 +124,22 @@ a:visited {
   color: rgb(224, 81, 79);
   font-weight: 700;
   font-size: 16px;
-  text-decoration-line: line-through;
+  /* text-decoration-line: line-through; */
+  position: relative;
 }
 .tbody .tr:nth-of-type(1) .td:nth-child(4) {
   color: rgb(255, 29, 51);
   font-weight: 700;
   font-size: 16px;
-  text-decoration-line: line-through;
+  /* text-decoration-line: line-through; */
+  position: relative;
 }
 .tbody .tr:nth-of-type(1) .td:nth-child(5) {
   color: rgb(67, 79, 252);
   font-weight: 700;
   font-size: 16px;
-  text-decoration-line: line-through;
+  /* text-decoration-line: line-through; */
+  position: relative;
 }
 
 .tbody .tr:nth-of-type(2) .td:nth-child(2) {
@@ -190,6 +194,12 @@ button:hover {
 }
 .red {
   color: #fe1b16;
+}
+@media screen and (max-width: 1500px) {
+  .offer--img {
+    right: 2.5vw;
+    top: -6vw;
+  }
 }
 @media screen and (max-width: 850px) {
   .container {
